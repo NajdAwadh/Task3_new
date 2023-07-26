@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="firstApp.Popup"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <StackLayout Margin="12"
+                 Padding="24"
+                 BackgroundColor="White"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center">
+         
+
+            <Entry x:Name="username" Placeholder="Username" TextColor="Black"  PlaceholderColor="Gray"  />
+        <Entry x:Name="email" Placeholder="Email" TextColor="Black" PlaceholderColor="Gray" />
+        <Entry x:Name="password" Placeholder="Password" TextColor="Black" IsPassword="True" PlaceholderColor="Gray" />
+            <Button 
+            x:Name="SignUpBut"
+            Text="Sign Up"
+            CornerRadius="5"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="Green"
+            TextColor="White"
+            Padding="100,20,100,20"
+            Clicked="SignUpButton_Clicked"
+                />
+
+        </StackLayout>
+        <!--<StackLayout>
+            
+            <Label Text="Login" />
+            <Entry FontSize="30"
+                   Text="username@email.com" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Password" />
+            <Entry FontSize="30"
+                   IsPassword="True"
+                   Text="password123" />
+        </StackLayout>
+        <Button BackgroundColor="DodgerBlue"
+                FontSize="30"
+                Text="Login"
+                TextColor="White" />
+    </StackLayout>-->
+</pages:PopupPage>
